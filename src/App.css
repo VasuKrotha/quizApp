@@ -1,38 +1,47 @@
-.App {
+.bg-option {
+  width: 100%;
+  background-color: bisque;
+  margin-top: 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  padding: 10px 150px 10px 150px;
+  align-items: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.bg-option:hover {
+  background-color: aquamarine;
+}
+.correct {
+  background-color: lightgreen;
+}
+.wrong {
+  background: rgb(238, 142, 142);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.progress-container {
+  width: 50%;
+  border-radius: 250px; /* Adjust the value as needed */
+  overflow: hidden; /* Ensures the border-radius is respected */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.progress-wrapper {
+  width: 50%;
+  height: 20px;
+  background-color: #ddd; /* Background color for the progress bar container */
+  border-radius: 10px; /* Rounded corners */
+  overflow: hidden; /* Hide overflowing progress bar */
 }
 
-.App-link {
-  color: #61dafb;
+.progress-bar {
+  height: 100%;
+  background-color: blue; /* Color for the progress bar */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Hide the default progress bar */
+.hidden-progress {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
